@@ -12,7 +12,7 @@ h1 {
 
 
 body {
-      font-family: 'basic-sans', sans-serif;font-size: 20px;
+      font-family: 'basic-sans', sans-serif;font-size: 15px;
       background-color: white;
 }
 
@@ -28,9 +28,9 @@ p    {color: black;}
   polynomial features, generating a baseline metric (BL).</p>
 <p>A regression including a daily mean sentiment score for all comments (A_ALL) containing
   the response variable ticker (AAPL) or common name (apple) in the comment text.</p>
-<p>A regression similar to the A_ALL process where comments are a subset of all ticker/name
-  comments where an unsupervised clustering process (PCA_#) is applied to surface comments
-  with pronounced idea language.
+<p>A regression similar to the A_ALL process except that comments for this metric are a subset
+  of all ticker/name comments. The subset is produced by an unsupervised clustering process (PCA_#)
+  is applied to surface comments with pronounced stock-trading idea language.
 </p>
 
 <img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_chron_r2.jpeg" alt="correlation chronology" style="width:90%;">
