@@ -10,6 +10,12 @@ h1 {
     color: white;
 }
 
+h3 {
+    font-family: 'basic-sans', sans-serif;font-size: 25px;
+    background-color: black;
+    color: white;
+}
+
 
 body {
       font-family: 'basic-sans', sans-serif;font-size: 15px;
@@ -21,14 +27,14 @@ p    {color: black;}
 </head>
 <body>
 
-<h1 style="text-align:center;">The Errant Analyst</h1>
+<h1 style="text-align:center;"><a href="index.html">The Errant Analyst</h1>
 
-<p> description of chart legend items:</p>
-<p> the benchmark specific r-squared is calculated using a linear regression with
+<h3>description of chart legend items:</h3>
+<p>BL - the benchmark specific r-squared is calculated using a linear regression with
   polynomial features, generating a baseline metric (BL).</p>
-<p>A regression including a daily mean sentiment score for all comments (A_ALL) containing
+<p>A_ALL - regression including a daily mean sentiment score for all comments (A_ALL) containing
   the response variable ticker (AAPL) or common name (apple) in the comment text.</p>
-<p>A regression similar to the A_ALL process except that comments for this metric are a subset
+<p>PCA_# - regression similar to the A_ALL process except that comments for this metric are a subset
   of all ticker/name comments. The subset is produced by an unsupervised clustering process (PCA_#)
   is applied to surface comments with pronounced stock-trading idea language.
 </p>
