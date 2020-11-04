@@ -83,8 +83,7 @@ div.ex1 {
 }
 
 div.ex2 {
-  width: 300px;
-  padding: 25px;
+  padding: 30px;
   background-color: transparent;
 }
 </style>
@@ -92,7 +91,45 @@ div.ex2 {
 <body>
 <h2 style="text-align:center;"><a href="index.html">The Errant Analyst</a></h2>
 
-<div class="ex1">under construction</div>
+<div class="ex2"><p>The Errant Analyst is home to independent work produced by Heather Leonard-Sullivan. Hosted
+on GitHub Pages, the static site makes available tabular and visualisations from the daily processing of
+social-financial chat collected from Reddit. The objective is two-fold: 1- to compile, process and deliver a
+quantitative view of the novel-length comment body posted to the site each day and over time, and 2- (given
+that my job was eliminated in April 2020) to provide a platform to demonstrate data analysis work created
+using python and machine learning techniques.<br>
+This endeavour began as a final project for the Data Science part-time course offered by General Assembly. To
+provide an accounting to potential users, ticker frequency and vocabulary lists have been added as views for
+each listed ticker. Work continues on the application of natural language processing techniques thereon. Unlike
+financial journalism, analyst recommendation reports, company earnings call transcripts, and other more
+deliberative sources, social commentary may or may not yield informally-organised ideation. The entertainment
+quality of its spontaneity and the coin/creddit system that assigns rewards available on the site are based
+on popular support for posts that resonate with subreddit members. Additionally, similar to shouting at a
+large party, comments may be simply a reflection of price action or what someone heard or they may express
+views that are detached from or run counter to the post user's actual trade activity.<br>It is difficult to
+dismiss parallels to the late-1990s tech boom for the present day. Aside from lofty valuations and instead
+of the supposed apocalyptic potential of Y2k, limitations associated with the pandemic are increasing usage
+and urging upgrades in technology. Zero-commission web apps have reimagined CNBC's streaming of financial
+happenings alongside broker advertisements into every living room, hair-dressers shop and the like. And, it
+appears at the time of this writing that endless coverage of the ballot recounts in Bush v Gore may get
+revisited. Whether the recent overtaking of price action on specific tickers related to retail trading is
+for the moment, for so long as there is fiscal stimulus, for so long as rates live near zero-bound, or has
+the potential to challenge the qualitative-quantitative-quantamental classification matrix is the excitement
+in documenting the chatter and exploring the ways with which the data may be used to enhance our
+understanding of this particular group of market participants.<br>
+<span style="font-weight:bold">Data Analytic</span><br>
+Comments are collected twice daily through the Reddit API. Pre-processing covers duplicates, bot
+commentary, daily summary and an extensive application of regex to improve identification of ticker
+mentions and performance of machine learning libraries. NLTK, Textblob and Spacy are used to process
+stop words, tokenise, lemmatise and generate sentiment and subjectivity scoring. Vectorisation of comments
+occurs via TF-IDF. Thus far clustering and dimension reduction have been most successful at three
+clusters when subjectivity is not considered.<br>Stock prices are collected at the close through Yahoo
+web-reader. Log returns are generated locally using Python. Linear regression with polynomial features
+and associated metrics are generated with the Scikit-learn library functionality. R-squared has been
+chosen as the baseline metric, given its wide use by both qualitative and quantitative styled
+managers. Regression metrics for a given company/benchmark pair are offered as a baseline, all-sentiment
+and clustered-sentiment metrics in a rolling time-series format.<br>If you are interested in reading
+comment text, please join the Reddit site directly.<br>Questions regarding the content of this
+site can be made here.<br>Please read the Terms of Service.</p></div>
 
 <footer>
   <p><a href="about.html">about this site</a>
