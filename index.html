@@ -83,7 +83,33 @@ a:active {
 div {
   padding: 20px;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F9F9F9;
+}
 
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #F9F9F9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #F9F9F9;
+}
+
+.active {
+  background-color: #FEFAF7;
+}
 </style>
 </head>
 <body>
@@ -94,29 +120,30 @@ div {
 <div class="parallax"></div>
 
 <!--<img src="https:\\theerrantanalyst.github.io\images\all_scatter_screen.jpeg" alt="ticker scatter plot" style="width:100%;">-->
-<div style="height:800px;background-color:#FEFAF7;">
+<div style="height:1200px;background-color:#FEFAF7;">
+<ul>
+  <li><a class="active" href="#index">Home</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 <h2 style="text-align:center;">FinChat by Numbers</h2>
 <p style="text-align:center;">Source data for <span style="font-weight:bold">FCbyN</span> is downloaded from the Reddit API. Several quantitative views are
   available and range from a simple time series count and progress in complexity to the application of k-nearest neighbors for comment
   surfacing. At present, much of the commentary is sourced from the wallstreetbets subreddit. Given the bullish sentiment enherent in wsb,
-  other subreddits have been included in an attempt to broaden the coverage of shared ideas.<br><a href="about.html">Details of source data can be found here.</a><br><br>
-  Quantitiative views presented in three ways:<br>
-   1- simple comment frequency by ticker<br>2- mean sentiment score by ticker for all comments flagged as having the ticker detected<br>
-   3- a natural language processing (nlp) view using sentiment, surfaced through a clustering and dimension reduction process</p><br>
-<p style="text-align:center;"><a href="ticker_AAPL.html">Apple - AAPL</a></p>
-<p style="text-align:center;"><a href="ticker_FB.html">Facebook - FB</a></p><br>
+  other subreddits have been included in an attempt to broaden the coverage of shared ideas.<br><a href="about.html">Process details can be found here.</a><br><br>
+<p style="text-align:center;"><a href="ticker_AAPL.html">Apple - AAPL</a>
+<a href="ticker_FB.html">Facebook - FB</a></p><br>
 <p style="text-align:center;"><a href="ticker_AMC.html">AMC Entertainment - AMC</a></p>
 <p style="text-align:center;"><a href="ticker_AMD.html">Advanced Micro Devices, Inc. - AMD</a></p>
 <p style="text-align:center;"><a href="ticker_CRM.html">salesforce.com - CRM</a></p>
 <p style="text-align:center;"><a href="ticker_GME.html">GameStop - GME</a></p>
 <p style="text-align:center;"><a href="ticker_NVDA.html">NVIDIA Corporation - NVDA</a></p>
-</div>
 
 <footer>
   <p><a href="about.html">about this site</a>
-  <a href="mailto:pm@theerrantanalyst.com">got questions?</a><br><br>
+  <a href="mailto:pm@theerrantanalyst.com">got questions?</a><br>
   Copyright © 2020 The Errant Analyst.  All Rights Reserved.</p>
 </footer>
+</dif>
 
 </body>
 </html>
