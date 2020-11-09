@@ -86,28 +86,66 @@ div.ex2 {
   padding: 30px;
   background-color: transparent;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F9F9F9;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #F9F9F9;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #F9F9F9;
+}
+
+.active {
+  background-color: #FEFAF7;
+}
 </style>
 </head>
 <body>
 <h2 style="text-align:center;"><a href="index.html">The Errant Analyst</a></h2>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="about.html">About</a></li>
+</ul>
+
 <h4 style="text-align:center;">about this site</h4>
-<div class="ex2"><p>The Errant Analyst is home to independent work produced by Heather Leonard-Sullivan. Hosted
-on GitHub Pages, the static site makes available tabular and chart visualisations from the daily processing of
+<div class="ex2"><p>Hosted on GitHub Pages, The Errant Analyst site makes available tabular and chart visualisations from the daily processing of
 social-financial chat collected from Reddit. The objective is two-fold: 1- to compile, process and deliver a
 quantitative view of the novel-length comment body posted to the site each day, and 2- to provide
-a platform to demonstrate data analysis work created using python and machine learning techniques.<br><br>
-This endeavour began as a final project for the Data Science part-time course offered by General Assembly. Work
-continues on the application of natural language processing techniques. Unlike
-financial journalism, analyst recommendation reports, company earnings call transcripts, and other more
-deliberative sources, social commentary may or may not yield informally-organised ideation. At present, it is
-difficult to dismiss parallels to the late-1990s market environment. Aside from lofty valuations and instead
-of the supposed apocalyptic potential of Y2k, limitations associated with the pandemic are increasing usage
-and urging upgrades in technology. Zero-commission web apps have reimagined CNBC's streaming of financial
-happenings alongside broker advertisements into every living room, hair-dressers shop and the like. Whether the recent overtaking of price action on specific tickers related to retail trading is
-just in the moment, for so long as there is fiscal stimulus, for so long as rates live near zero-bound, or has
-the potential to challenge the qualitative-quantitative-quantamental classification matrix is part of the excitement
-in documenting the chatter and exploring the ways with which the data may be used to enhance our
-understanding of this particular group of market participants.<br><br>
+a platform to demonstrate data analysis work created using comment text, python and machine learning
+techniques.<br><br>
+This endeavour began as a final project for the Data Science part-time course offered by General Assembly.
+Unlike financial journalism, analyst recommendation reports, company earnings call transcripts, and other
+more deliberative sources, social commentary may or may not yield informally-organised ideation. Unlike other
+social sites, Reddit prohibits the sharing of personally identifiable information, encouraging anonymity.<br><br>
+At present, it is difficult to dismiss parallels to the late-1990s market environment. Aside from lofty
+valuations and instead of the supposed apocalyptic potential of Y2k, limitations associated with the pandemic
+are increasing usage and urging upgrades in technology. Zero-commission web apps have reimagined CNBC's
+streaming of financial happenings alongside broker advertisements into every living room, hair-dressers
+shop and the like. It is unclear whether recent instances of retail trading overtaking price action on
+specific tickers will continue. This activity could be a function of the recent fiscal stimulus coupled
+with rates nearer zero-bound. That said, it may be an early demonstration of changing attitudes toward
+market orthodoxy by Millenials and Gen Z participants, having the potential to challenge longstanding
+acceptance of qualitative, quantitative, and quantamental approaches.<br><br>
+The excitement of this project lies in documenting the chatter and exploring the ways with which the
+data may be used to enhance our understanding of this particular group of market participants. After
+pre-processing (cleaning), natural language processing techniques are used to derive topicality and
+determine the relevance of posts.<br><br>
 <h4 style="text-align:center;">data analytics</h4>
 Comments are collected twice daily through the Reddit API. Pre-processing covers duplicates, bot
 commentary, daily summary and an extensive application of regex to improve identification of ticker
@@ -120,12 +158,10 @@ and associated metrics are generated with the Scikit-learn library functionality
 chosen as the baseline metric, given its wide use by both qualitative and quantitative styled
 managers. Regression metrics for a given company/benchmark pair are offered as a baseline, all-sentiment
 and clustered-sentiment metrics in a rolling time-series format.<br><br>If you are interested in reading
-comment text, please join the Reddit site directly.<br><br>Questions regarding the content of this
-site can be made here.<br><br>Please read the Terms of Service.</p></div>
+comment text, please join the Reddit site directly.<br>Please read the Terms of Service.</p></div>
 
 <footer>
-  <p><a href="about.html">about this site</a>
-  <a href="mailto:pm@theerrantanalyst.com">got questions?</a><br><br>
+  <p><a href="mailto:pm@theerrantanalyst.com">questions?</a><br><br>
   Copyright © 2020 The Errant Analyst.  All Rights Reserved.</p>
 </footer>
 
