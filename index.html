@@ -112,6 +112,20 @@ li a:hover:not(.active) {
 .active {
   background-color: #FEFAF7;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #FEFAF7;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: 'white';
+}
 </style>
 </head>
 <body>
@@ -129,19 +143,30 @@ li a:hover:not(.active) {
   <li><a href="tos.html">ToS</a></li>
 </ul>
 <h2 style="text-align:center;">FinChat Sentiments</h2>
-<p>Source data for <span style="font-weight:bold">FCS</span> Source data for FCS is downloaded from the Reddit API. Several quantitative views are
-  available and range from a simple time series count and progress in complexity to the application of k-nearest neighbors for comment
-  surfacing. At present, much of the commentary is sourced from the wallstreetbets subreddit. Given the bullish sentiment enherent in wsb,
-  other subreddits have been included in an attempt to broaden the coverage of shared ideas. Process details can be found <a href="about.html">here</a>.<br><br>
-<p style="text-align:center;"><a href="ticker_AAPL.html">Apple - AAPL</a> • <a href="ticker_FB.html">Facebook - FB</a></p><br>
-<p style="text-align:center;"><a href="ticker_AMC.html">AMC Entertainment - AMC</a> •
-<a href="ticker_AMD.html">Advanced Micro Devices, Inc. - AMD</a> •
-<a href="ticker_CRM.html">salesforce.com - CRM</a><br>
-<a href="ticker_GME.html">GameStop - GME</a> •
-<a href="ticker_NVDA.html">NVIDIA Corporation - NVDA</a></p>
+<p>Welcome to <span style="font-weight:bold">FCS</span>. Source data for FCS is downloaded from the Reddit API, primarly
+  from the subreddit wallstreetbets. Commentary from other finance-related subreddits is included to broaden the range
+  of ideas used to generate mean sentiment scores. Process details can be found <a href="about.html">here</a>.<br><br>
+
+<table>
+  <tr>
+    <th><a href="ticker_AAPL.html">Apple - AAPL</a></th>
+    <th><a href="ticker_FB.html">Facebook - FB</a></th>
+    <th><a href="ticker_AMC.html">AMC Entertainment - AMC</a></th>
+  </tr>
+  <tr>
+    <td><a href="ticker_AMD.html">Advanced Micro Devices, Inc. - AMD</a></td>
+    <td><a href="ticker_CRM.html">salesforce.com - CRM</a></td>
+    <td><a href="ticker_GME.html">GameStop - GME</a></td>
+  </tr>
+  <tr>
+    <td><a href="ticker_NVDA.html">NVIDIA Corporation - NVDA</a></td>
+    <td><a href="ticker_AMC.html">AMC Entertainment - AMC</a></td>
+    <td><a href="ticker_GME.html">GameStop - GME</a></td>
+  </tr>
+</table>
 
 <footer>
-  <p><a href="mailto:pm@theerrantanalyst.com">questions?</a><br><br>
+  <p><a href="mailto:info@theerrantanalyst.com">questions?</a><br><br>
   Copyright © 2020 The Errant Analyst.  All Rights Reserved.</p>
 </footer>
 </div>
