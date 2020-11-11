@@ -101,6 +101,23 @@ img {
   margin-right: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 </style>
 </head>
 <body>
@@ -119,13 +136,24 @@ img {
 <img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_chron_r2.jpeg" alt="time series r-squared" style="width:90%;">
 <br>
 <h3>Ticker v Common Index ETFs</h3>
-<img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_QQQ_r2.jpeg" alt="r-squared qqq" style="width:45%;">
-<img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_SPY_r2.jpeg" alt="r-squared spy" style="width:45%;">
+<div class="row">
+  <div class="column">
+    <img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_QQQ_r2.jpeg" alt="r-squared qqq" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_SPY_r2.jpeg" alt="r-squared spy" style="width:100%">
+  </div>
+</div>
 <br>
 <h3>Time Series Log Returns & Sentiment by Benchmark</h3>
-<img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_QQQ_chron_logret_sent.jpeg" alt="time series log returns and sentiment versus spy" style="width:45%;">
-<img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_SPY_chron_logret_sent.jpeg" alt="time series log returns and sentiment versus qqq" style="width:45%;">
-<br>
+<div class="row">
+  <div class="column">
+    <img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_QQQ_chron_logret_sent.jpeg" alt="time series log returns and sentiment versus spy" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https:\\theerrantanalyst.github.io\images\AAPL\AAPL_SPY_chron_logret_sent.jpeg" alt="time series log returns and sentiment versus qqq" style="width:100%">
+  </div>
+</div>
 
 <footer>
   <p><a href="mailto:info@theerrantanalyst.com">questions?</a><br><br>
