@@ -6,6 +6,25 @@
 <link rel="icon"
       type="image/png"
       href="https://theerrantanalyst.github.io/tea-favicon.png"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+      $(document).ready(function(){
+        $('.animated-img').each(function(){
+          var $el = $(this),
+            staticSrc = $el.attr('src'),
+            gifSrc = $el.data('gifSrc');
+          $el.hover(
+            function(){
+              $(this).attr("src", gifSrc);
+            },
+            function(){
+              $(this).attr("src", staticSrc);
+            });
+        });
+      });
+</script>
+
 <style>
 h1 {
     font-family: 'gloss-drop', cursive;font-size: 43px;
@@ -135,9 +154,7 @@ td, th {
 tr:nth-child(odd) {
   background-color: white;
 }
-
 </style>
-
 </head>
 <body>
 
@@ -155,7 +172,8 @@ tr:nth-child(odd) {
   is downloaded from the Reddit API, primarily from wallstreetbets. Other finance-related subreddits are included
   to broaden the range of ideas in the analysis. Data details can be found <a href="about.html">here</a>.<br><br>
 
-<img src="https:\\theerrantanalyst.github.io\images\scatter.gif" class='gif' style="width:90%;">
+<!--<img src="https:\\theerrantanalyst.github.io\images\scatter.gif" class='gif' style="width:90%;">-->
+<img class="animated-img" src="https:\\theerrantanalyst.github.io\images\2020-11-11_daily_r2_main_grid.jpeg" data-gif-src="https:\\theerrantanalyst.github.io\images\scatter.gif" />
 
 <br>
 
