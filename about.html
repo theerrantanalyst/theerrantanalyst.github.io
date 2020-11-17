@@ -122,22 +122,20 @@ li a:hover:not(.active) {
   <li><a href="index.html">Home</a></li>
   <li><a class="active" href="about.html">About</a></li>
   <li><a href="tos.html">ToS</a></li>
+  <li><a href="privacy.html">ToS</a></li>
 </ul>
 
 <h4 style="text-align:center;">about this site</h4>
 <div class="ex2"><p>Hosted on GitHub Pages, The Errant Analyst site posts chart visualisations from the daily processing of
-social-financial chat collected from Reddit. It is the portfolio site for Heather Leonard. Please read the Terms of Service (<a href="tos.html">ToS</a>).<br><br>
+social-financial chat collected from Reddit. Please read the Terms of Service (<a href="tos.html">ToS</a>).<br><br>
 This endeavour began as a final project for the Data Science part-time course offered by General Assembly.
 Unlike financial journalism, analyst recommendation reports, company earnings call transcripts, and other
-more deliberative sources, social commentary may or may not yield informally-organised ideation. Unlike other
-social sites, Reddit prohibits the sharing of personally identifiable information, encouraging anonymity.<br><br>
+more deliberative sources, social commentary may or may not yield informally-organised ideation. <br><br>
 At present, it is difficult to dismiss parallels to the late-1990s market environment. Aside from lofty
 valuations and instead of the supposed apocalyptic potential of Y2k, limitations associated with the pandemic
 are increasing usage and urging upgrades in technology. Zero-commission web apps have reimagined CNBC's
 streaming of financial happenings alongside broker advertisements into every living room, hair-dressers
-shop and the like. <br><br>It is unclear whether recent instances of retail trading overtaking price action on
-specific tickers will continue. This activity could be a function of the recent lockdown restrictions, fiscal stimulus
-and rates nearer zero-bound. That said, it may be a demonstration of changing attitudes toward
+shop and the like. <br><br>That said, it may be a demonstration of changing attitudes toward
 market orthodoxy by Millenials and Gen Z participants, having the potential to challenge longstanding
 acceptance of qualitative, quantitative, and quantamental investment approaches.<br><br>
 The excitement of this project lies in documenting the chatter and exploring the ways with which the
@@ -146,19 +144,19 @@ pre-processing (cleaning), natural language processing techniques are used to de
 determine the relevance of posts.<br><br>
 <h4 style="text-align:center;">data analytics</h4>
 Comments are collected twice daily through the Reddit API. Pre-processing covers duplicates, bot
-commentary, daily summary and an extensive application of regex to improve identification of ticker
+commentary, daily summary and an application of regex to improve identification of ticker
 mentions and performance of machine learning libraries. NLTK, Textblob and Spacy are used to process
 stop words, tokenise, lemmatise and generate sentiment and subjectivity scoring. Vectorisation of comments
 occurs via TF-IDF. Thus far clustering and dimension reduction have been most successful at three
 clusters when subjectivity is not considered.<br><br>Stock prices are collected at the close through Yahoo
-web-reader. Log returns are generated locally using Python. Linear regression with polynomial features
-and associated metrics are generated with the Scikit-learn library functionality. R-squared has been
+via datareader. Log returns are generated locally using Python. Linear regression with polynomial features
+and associated metrics are generated with the scikit-learn library functionality. R-squared has been
 chosen as the baseline metric, given its wide use by both qualitative and quantitative styled
 managers. Regression metrics for a given company/benchmark pair are offered as a baseline, all-sentiment
 and clustered-sentiment metrics in a rolling time-series format.</p></div>
 
 <footer>
-  <p><a href="mailto:pm@theerrantanalyst.com">questions?</a><br><br>
+  <p><a href="mailto:info@theerrantanalyst.com">questions?</a><br><br>
   Copyright © 2020 The Errant Analyst.  All Rights Reserved.</p>
 </footer>
 
