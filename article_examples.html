@@ -69,6 +69,30 @@ a:active {
   text-decoration: none;
 }
 
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 div.ex1 {
   font-family: 'basic-sans', sans-serif;font-size: 30px;
   font-weight: 300;
@@ -127,24 +151,43 @@ li a:hover:not(.active) {
 
 <h4 style="text-align:center;">reading the charts</h4><br><br>
 <h4 style="text-align:center;">the main scatter plot</h4>
-<img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_1_01.png" style="width:90%;">
+<div class="row">
+  <div class="column">
+    <img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_1_01.png" alt="scatter plot example" style="width:90%;">
+  </div>
+</div>
 <div class="ex2"><p>If you've arrived here without a ticker in mind, the scatter plot is the key to all of the tickers
-  included in the table. The plot has four regions described in detail below. Briefly, tickers appearing near the origin
+  included in the table. The plot has four regions with Trailing R-Squared images for each selected ticker shown below. Briefly, tickers appearing near the origin
   have not demonstrated a meaningful divergence from the baseline r-squared based on sentiment scoring - TSLA is a good
   example of this condition. Tickers falling along the line where ALL Sentiment is similar to Cluster Sentiment reflect
   an improvement to r-squared for both all comments registering a sentiment score and those surfaced by a clustering
   process - CCL. Tickers appearing to the right of the line show promise on the All Sentiment, but that the surfacing technique
-  is not yielding any added value or reduction in comments needed to product the additional r-squred - PTON. Lastly, those
-  to the left of the line show promise from the clustered process but the ALL Sentiment is less helpful - AMC.<br><br>
+  is not yielding any added value or reduction in comments needed to product the additional r-squared - PTON. Lastly, those
+  to the left of the line show promise from the clustered process but the ALL Sentiment is less helpful - AMC.</p>
+
 <h3 style="text-align:center;">TSLA Example - Landing Near the Origin</h3>
-<img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_4_02.png" style="width:90%;"><br><br>
+<div class="row">
+  <div class="column">
+    <img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_4_02.png" alt="scatter origin example" style="width:90%;"><br><br>
+  </div>
+</div>
 <h3 style="text-align:center;">CCL Example - Along the Line</h3>
-<img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_2_04.png" style="width:90%;"><br><br>
+<div class="row">
+  <div class="column">
+      <img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_2_04.png" alt="scatter linear example" style="width:90%;"><br><br>
+  </div>
+</div>
 <h3 style="text-align:center;">PTON Example - To the Right</h3>
-<img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_3_05.png" style="width:90%;"><br><br>
+<div class="row">
+  <div class="column">
+      <img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_3_05.png" alt="scatter right side example" style="width:90%;"><br><br>
+  </div>
+</div>
 <h3 style="text-align:center;">AMC Example - To the Left</h3>
-<img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_5_03.png" style="width:90%;"><br><br>
-</p>
+<div class="row">
+  <div class="column">
+    <img src="https:\\theerrantanalyst.github.io\images\zy_examples\ea_example_5_03.png" alt="scatter left side example" style="width:90%;"><br><br>
+  </div>
 </div>
 
 <footer>
